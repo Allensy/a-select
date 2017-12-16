@@ -1,0 +1,15 @@
+  <div class="main">
+    <div class="row clearfix" id="uiselect1">
+      <!--// UI SELECT FIRST INSTANCE START //-->
+      <div class="col col1">
+        <app-my-select [itemsList]="hotelsList1" (changedItem)="onItemChanged($event)"></app-my-select>
+      </div>
+      <!--// UI SELECT FIRST INSTANCE END //-->
+
+      <!--// UI SELECT SECOND INSTANCE START //-->
+      <div class="col col2">
+          <app-my-select [itemsList]="hotelsList2" (changedItem)="onItemChanged($event)"></app-my-select>
+      </div>
+      <!--// UI SELECT SECOND INSTANCE END //-->
+    </div>
+  </div>

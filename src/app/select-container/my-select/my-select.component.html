@@ -1,0 +1,11 @@
+<div class="select-container">
+  <div class="select-display" [ngClass]="{active: showMenu}" (click)="openList()">
+    <div class="text-and-icon">
+      <div class="icon">^</div>
+      <div *ngIf="chosenItem" class="text">{{chosenItem.name}}</div>
+    </div>
+  </div>
+  <div class="list-container" *ngIf="showMenu">
+      <app-my-option *ngFor="let item of itemsList" [item]="item" (itemPicked)="onItemPicked($event)"></app-my-option>
+  </div>
+</div>

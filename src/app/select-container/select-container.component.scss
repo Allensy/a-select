@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  flex-direction: column;
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+  }
+  .btn-section {
+    text-align: center;
+    button {
+      width: 100px;
+    }
+  }
+}
